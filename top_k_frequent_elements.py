@@ -1,3 +1,4 @@
+# complexity O(n+k)
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         count = {}
@@ -15,6 +16,7 @@ class Solution:
                 if len(res) == k:
                     return res
 #2nd approach
+# initialize counter O(n) , sort dict O(m log m) ,extract top k elements : O(m+k)
 from collections import OrderedDict
 from collections import Counter
 class Solution:
